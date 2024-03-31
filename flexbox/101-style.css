@@ -1,0 +1,67 @@
+:root {
+    /* colors */
+    --color1: #44ff33;
+    --color2: #352092;
+    --color3: #0d2b35;
+    --color4: #fff347;
+    --color5: #ff0000;
+    /* sizes */
+    --bxWidth: 4;
+    --bxHeight: 2.5;
+    --font-big: 4.5rem;
+}
+
+.container {
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-1rem);
+}
+
+.box1,
+.box5 {
+    font-size: calc(var(--font-big) * 0.25);
+    width: calc(var(--font-big) * 0.25 * var(--bxWidth));
+    height: calc(var(--font-big) * 0.25 * var(--bxHeight));
+}
+
+.box2,
+.box4 {
+    font-size: calc(var(--font-big) * 0.5);
+    width: calc(var(--font-big) * 0.5 * var(--bxWidth));
+    height: calc(var(--font-big) * 0.5 * var(--bxHeight));
+}
+
+.box3 {
+    font-size: calc(var(--font-big) * 1);
+    width: calc(var(--font-big) * var(--bxWidth));
+    height: calc(var(--font-big) * var(--bxHeight));
+}
+
+.box1 {
+    background-color: var(--color1);
+}
+
+.box2 {
+    background-color: var(--color2);
+}
+
+.box3 {
+    background-color: var(--color3);
+}
+
+.box4 {
+    background-color: var(--color4);
+}
+
+.box5 {
+    background-color: var(--color5);
+}
